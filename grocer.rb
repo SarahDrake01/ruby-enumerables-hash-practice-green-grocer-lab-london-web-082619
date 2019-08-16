@@ -65,7 +65,7 @@ def checkout(items, coupons)
   cart = consolidate_cart(items)
   #Run apply_coupons method with  consolidated cart1 and the coupons that will passed in as an argument.
   cart1 = apply_coupons(cart, coupons)
-  #Run our apply_clearance method with our newly created cart1
+  #Run our apply_clearance method with the  newly created cart1
   # and store this in a variable as well, cart2
   cart2 = apply_clearance(cart1)
 #create a variable total to store the final cart total
