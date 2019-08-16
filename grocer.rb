@@ -34,7 +34,7 @@ def apply_coupons(cart, coupons)
           :clearance => cart[name][:clearance], :count => coupon[:num]}
           #The last line of this statement is cart[name][:count] -= coupon[:num].
           # So after I've gone through  inner if/else statement with coupon,
-          #I then reduce item :count by the number of items used by our coupon.
+          #I'II then reduce item :count by the number of items used by our coupon.
         end
         #Then I return updated cart.
       cart[name][:count] -= coupon[:num]
@@ -63,7 +63,7 @@ def checkout(items, coupons)
   # and store the return from this method in a variable; I call it cart
   #This is the new consolidated cart
   cart = consolidate_cart(items)
-  #Run apply_coupons method with our consolidated cart1 and the coupons that will passed in as an argument.
+  #Run apply_coupons method with  consolidated cart1 and the coupons that will passed in as an argument.
   cart1 = apply_coupons(cart, coupons)
   #Run our apply_clearance method with our newly created cart1
   # and store this in a variable as well, cart2
